@@ -2,12 +2,18 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Quiz de Conhecimentos Gerais</title>
-    <link rel="stylesheet" href="style.css"> </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizLab - Conhecimentos Gerais</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components/card.css">
+    <link rel="stylesheet" href="css/components/nav.css"> 
+</head>
 <body>
     <header>
         <div class="logo">
-            <h1>MundoQuiz</h1>
+            <img src="assets/logo-quizlab.jpg" id="img-logo" alt="Logo QuizLab">
         </div>
         <nav class="nav-links">
             <button id="btn-reiniciar">Reiniciar Quiz</button>
@@ -26,7 +32,7 @@
         </aside>
 
         <section class="content">
-            <div class="quiz-box">
+            <article class="quiz-box">
                 <p class="stats">Questão 1 de 10</p>
                 <h2 id="question-text">Qual é o maior planeta do nosso sistema solar?</h2>
                 
@@ -36,16 +42,23 @@
                     <button class="answer-card">Saturno</button>
                     <button class="answer-card">Netuno</button>
                 </div>
-            </div>
+            </article>
         </section>
 
         <aside class="aside">
             <h3>Top Jogadores</h3>
             <ol>
-                <li>Ana: 950 pts</li>
-                <li>Carlos: 820 pts</li>
+                <li>Gabriel: 950 pts</li>
+                <li>Yghor: 820 pts</li>
+                <li>Caio: 740 pts</li>
+                <li>Gustavo: 600 pts</li>
+                <li>Rafael: 0 pts</li>
             </ol>
         </aside>
     </main>
+
+    <footer>
+        <p>&copy; 2026 QuizLab - Aplicações para internet</p>
+    </footer>
 </body>
 </html>

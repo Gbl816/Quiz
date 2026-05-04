@@ -1,0 +1,15 @@
+.answer-card {
+    background: var(--color-bg-card);
+    border: 2px solid var(--color-accent);
+    color: var(--color-text);
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.answer-card:hover {
+    background: var(--color-accent);
+    color: white;
+}
