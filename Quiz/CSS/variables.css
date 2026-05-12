@@ -1,23 +1,49 @@
 :root {
-    
-    --color-primary: #2c3e50;
-    --color-accent: #3498db;
-    --color-success: #27ae60; 
-    --color-bg-body: #f4f7f6;
-    --color-bg-card: #ffffff;
-    --color-text: #333333;
-    --color-border: #dcdde1;
+    --font-sans: 'Inter', system-ui, sans-serif;
+    --font-display: 'Poppins', system-ui, sans-serif;
 
-    
-    --fs-base: clamp(0.875rem, 2vw, 1rem);
-    --fs-h1: clamp(1.75rem, 4vw, 2.5rem);
-    --fs-h2: clamp(1.25rem, 3vw, 1.875rem);
+    --color-primary-500: #2E75B6;
+    --color-primary-700: #1B4D88;
+    --color-accent: #3498db;
+    --color-success: #27ae60;
+    --color-danger: #E53E3E;
+    --color-bg-body: #f4f7f6;
+    --color-bg-surface: #ffffff;
+    --color-border: #d1d5db;
+    --color-text: #111827;
+    --color-muted: #6b7280;
+    --color-footer-bg: #111827;
+    --color-footer-text: #d1d5db;
+
+    --space-xxs: 0.25rem;
+    --space-xs: 0.5rem;
+    --space-sm: 0.75rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-xxl: 4rem;
+
+    --radius-sm: 0.5rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1.25rem;
+
+    --border-thin: 1px;
+    --border-base: 2px;
+
+    --fs-base: clamp(0.9375rem, 1.5vw, 1rem);
+    --fs-sm: 0.9rem;
+    --fs-h1: clamp(2rem, 4vw, 3rem);
+    --fs-h2: clamp(1.5rem, 3.5vw, 2.25rem);
+    --fs-h3: clamp(1.25rem, 2.5vw, 1.75rem);
 }
+
 @media (prefers-color-scheme: dark) {
     :root {
         --color-bg-body: #111827;
-        --color-bg-card: #1f2937;
+        --color-bg-surface: #1f2937;
         --color-text: #f9fafb;
         --color-border: #374151;
+        --color-footer-bg: #0f172a;
+        --color-footer-text: #cbd5e1;
     }
 }
