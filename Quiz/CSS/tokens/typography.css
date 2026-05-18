@@ -1,0 +1,19 @@
+/* Typography tokens */
+:root {
+    --font-sans: var(--_font-sans);
+    --font-display: var(--_font-display);
+
+    --fs-base: var(--_fs-base);
+    --fs-sm: var(--_fs-sm);
+    --fs-h1: var(--_fs-h1);
+    --fs-h2: var(--_fs-h2);
+    --fs-h3: var(--_fs-h3);
+
+br
+    --radius-sm: var(--_radius-sm);
+    --radius-md: var(--_radius-md);
+    --radius-lg: var(--_radius-lg);
+
+    --border-thin: var(--_border-thin);
+    --border-base: var(--_border-base);
+}

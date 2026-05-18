@@ -1,0 +1,43 @@
+/* Semantic tokens map primitives to intentions. Keep components referencing only these. */
+:root {
+    /* Colors */
+    --color-primary-500: var(--_color-primary-500);
+    --color-primary-700: var(--_color-primary-700);
+    --color-accent: var(--_color-accent);
+    --color-success: var(--_color-success);
+    --color-danger: var(--_color-danger);
+
+    --color-bg-body: var(--_color-bg-body);
+    --color-bg-surface: var(--_color-bg-surface);
+    --color-border: var(--_color-border);
+    --color-text: var(--_color-text);
+    --color-muted: var(--_color-muted);
+    --color-footer-bg: var(--_color-footer-bg);
+    --color-footer-text: var(--_color-footer-text);
+
+    /* Helpers */
+    --color-overlay-dark: var(--_overlay-dark);
+    --color-border-muted-light: var(--_border-muted-light);
+    --color-primary-overlay-08: var(--_primary-overlay-08);
+
+br
+    --shadow-1: var(--_shadow-1);
+    --shadow-2: var(--_shadow-2);
+        --shadow-small: var(--_shadow-small);
+        --color-border-strong: var(--_border-strong);
+    --shadow-3: var(--_shadow-3);
+
+    --danger-bg: var(--_danger-bg);
+    --danger-border: var(--_danger-border);
+    --danger-text: var(--_danger-text);
+}
+
+/* Dark theme mapping */
+[data-theme="dark"] {
+    --color-bg-body: #111827;
+    --color-bg-surface: #1f2937;
+    --color-text: #f9fafb;
+    --color-border: #374151;
+    --color-footer-bg: #0f172a;
+    --color-footer-text: #cbd5e1;
+}
