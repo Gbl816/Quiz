@@ -1,4 +1,7 @@
-/* Spacing scale (multiples of 4px where practical) */
+/*
+ Escala de espaçamento — múltiplos de 4px quando possível.
+ Use aliases compatíveis para manter retrocompatibilidade.
+*/
 :root {
     --space-0: 0rem;
     --space-1: 0.25rem; /* 4px */

@@ -1,3 +1,15 @@
+/*
+ Convenção de tokens (PT-BR)
+ - Primitives: valores de baixo nível, prefixados com '_' (ex.: --_color-primary-500).
+     NÃO referencie primitivos diretamente no CSS de componentes — utilize tokens semânticos.
+ - Semânticos: mapeiam primitivos para intenções de uso (ex.: --color-bg-surface, --color-text).
+     Componentes devem referenciar apenas tokens semânticos para permitir theming centralizado.
+ - Espaçamento: siga uma escala previsível (múltiplos de 4px) e exponha aliases (--space-4, --space-md).
+ - Tipografia: centralize família, tamanhos e pesos em `typography.css`.
+ - Theming: sobrescreva tokens semânticos via `[data-theme="dark"]` em `semantic.css`.
+ - Arquivos: tokens/primitives.css, tokens/semantic.css, tokens/spacing.css, tokens/typography.css
+ - Nomeação: use kebab-case e nomes descritivos (evite nomes de cores para tokens de uso).
+*/
 :root {
     /* Primitives: underscored names signal internal primitives */
     /* Palette */

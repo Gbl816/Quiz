@@ -1,4 +1,7 @@
-/* Semantic tokens map primitives to intentions. Keep components referencing only these. */
+/*
+ Tokens semânticos — mapeiam primitivos para intenções de uso.
+ Mantenha componentes referenciando APENAS estes tokens.
+*/
 :root {
     /* Colors */
     --color-primary-500: var(--_color-primary-500);
@@ -20,11 +23,10 @@
     --color-border-muted-light: var(--_border-muted-light);
     --color-primary-overlay-08: var(--_primary-overlay-08);
 
-br
     --shadow-1: var(--_shadow-1);
     --shadow-2: var(--_shadow-2);
-        --shadow-small: var(--_shadow-small);
-        --color-border-strong: var(--_border-strong);
+    --shadow-small: var(--_shadow-small);
+    --color-border-strong: var(--_border-strong);
     --shadow-3: var(--_shadow-3);
 
     --danger-bg: var(--_danger-bg);
