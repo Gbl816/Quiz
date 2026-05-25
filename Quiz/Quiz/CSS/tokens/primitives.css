@@ -1,0 +1,91 @@
+/*
+ Convenção de tokens (PT-BR)
+ - Primitives: valores de baixo nível, prefixados com '_' (ex.: --_color-primary-500).
+     NÃO referencie primitivos diretamente no CSS de componentes — utilize tokens semânticos.
+ - Semânticos: mapeiam primitivos para intenções de uso (ex.: --color-bg-surface, --color-text).
+     Componentes devem referenciar apenas tokens semânticos para permitir theming centralizado.
+ - Espaçamento: siga uma escala previsível (múltiplos de 4px) e exponha aliases (--space-4, --space-md).
+ - Tipografia: centralize família, tamanhos e pesos em `typography.css`.
+ - Theming: sobrescreva tokens semânticos via `[data-theme="dark"]` em `semantic.css`.
+ - Arquivos: tokens/primitives.css, tokens/semantic.css, tokens/spacing.css, tokens/typography.css
+ - Nomeação: use kebab-case e nomes descritivos (evite nomes de cores para tokens de uso).
+*/
+:root {
+    /* Primitives: underscored names signal internal primitives */
+    /* Palette */
+    --_color-primary-500: #2E75B6;
+    --_color-primary-700: #1B4D88;
+    --_color-accent: #3498db;
+    --_color-success: #27ae60;
+    --_color-danger: #E53E3E;
+
+    --_neutral-50: #F9FAFB;
+    --_neutral-100: #F4F7F6;
+    --_neutral-900: #111827;
+    --_gray-800: #1F2937;
+    --_gray-900: #111827;
+
+    --_color-bg-body: #f4f7f6;
+    --_color-bg-surface: #ffffff;
+    --_color-border: #d1d5db;
+    --_color-text: #111827;
+    --_color-muted: #6b7280;
+    --_color-footer-bg: #111827;
+    --_color-footer-text: #d1d5db;
+
+    /* Helpers / overlays / shadows */
+    --_overlay-dark: rgba(17, 24, 39, 0.94);
+    --_border-muted-light: rgba(255, 255, 255, 0.08);
+    --_primary-overlay-08: rgba(46, 117, 182, 0.08);
+    --_shadow-1: 0 18px 40px rgba(0, 0, 0, 0.06);
+    --_shadow-2: 0 12px 28px rgba(0, 0, 0, 0.06);
+    --_shadow-3: 0 20px 45px rgba(0, 0, 0, 0.12);
+    --_shadow-small: 0 8px 24px rgba(0, 0, 0, 0.08);
+    --_border-strong: rgba(0, 0, 0, 0.12);
+
+    /* Alerts */
+    --_danger-bg: #f8d7da;
+    --_danger-border: #e74c3c;
+    --_danger-text: #9b2c2c;
+
+    /* Spacing primitives (base) */
+    --_space-1: 0.25rem;
+    --_space-2: 0.5rem;
+    --_space-3: 0.75rem;
+    --_space-4: 1rem;
+    --_space-6: 1.5rem;
+    --_space-8: 2rem;
+    --_space-12: 3rem;
+    --_space-16: 4rem;
+
+    /* Radii */
+    --_radius-sm: 0.5rem;
+    --_radius-md: 0.75rem;
+    --_radius-lg: 1.25rem;
+
+    /* Borders */
+    --_border-thin: 1px;
+    --_border-base: 2px;
+
+    /* Typography primitives */
+    --_font-sans: 'Inter', system-ui, sans-serif;
+    --_font-display: 'Poppins', system-ui, sans-serif;
+
+br
+    --_fs-base: clamp(0.9375rem, 1.5vw, 1rem);
+    --_fs-sm: 0.9rem;
+    --_fs-h1: clamp(2rem, 4vw, 3rem);
+    --_fs-h2: clamp(1.5rem, 3.5vw, 2.25rem);
+    --_fs-h3: clamp(1.25rem, 2.5vw, 1.75rem);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --_color-bg-body: #111827;
+        --_color-bg-surface: #1f2937;
+        --_color-text: #f9fafb;
+        --_color-border: #374151;
+        --_color-footer-bg: #0f172a;
+        --_color-footer-text: #cbd5e1;
+    }
+}
