@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizLab - Quiz por Área</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/variables.css">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="CSS/layout.css">
+    <link rel="stylesheet" href="CSS/Components/nav.css">
+    <link rel="stylesheet" href="CSS/Components/btn.css">
+    <link rel="stylesheet" href="CSS/Components/card.css">
+    <link rel="stylesheet" href="CSS/Components/footer.css">
+    <link rel="stylesheet" href="CSS/utilities.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="header">
+            <div class="header__inner">
+                <a class="brand" href="#" aria-label="Página inicial do QuizLab">
+                    <span class="brand__mark">
+                        <img src="assets/logo-quizlab-icon.png" alt="Logo QuizLab" class="brand__logo">
+                    </span>
+                    <span class="brand__text">
+                        <span class="brand__name">QuizLab</span>
+                        <span class="brand__tagline">Quiz moderno por área de conhecimento</span>
+                    </span>
+                </a>
+
+                <div class="header__actions">
+                    <span class="header__pill">40 perguntas no total</span>
+                    <button id="btn-reiniciar" class="btn btn--outline" type="button">Reiniciar Quiz</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="app-layout" aria-label="Aplicação de quiz">
+            <aside class="side-card categories-card" aria-labelledby="categories-title">
+                <div class="side-card__header">
+                    <span class="side-card__eyebrow">Escolha uma área</span>
+                    <h2 id="categories-title" class="side-card__title">Categorias</h2>
+                    <p class="side-card__text">Cada área tem 10 perguntas próprias.</p>
+                </div>
+
+                <ul class="category-list" aria-label="Categorias do quiz">
+                    <li>
+                        <button class="category-card category-card--active" type="button" data-category="Geografia">
+                            <span class="category-card__icon" aria-hidden="true">🌎</span>
+                            <span class="category-card__content">
+                                <strong>Geografia</strong>
+                                <small>Mapas, países e clima</small>
+                            </span>
+                            <span class="category-card__count">10</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="category-card" type="button" data-category="História">
+                            <span class="category-card__icon" aria-hidden="true">🏛️</span>
+                            <span class="category-card__content">
+                                <strong>História</strong>
+                                <small>Brasil, mundo e períodos</small>
+                            </span>
+                            <span class="category-card__count">10</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="category-card" type="button" data-category="Artes">
+                            <span class="category-card__icon" aria-hidden="true">🎨</span>
+                            <span class="category-card__content">
+                                <strong>Artes</strong>
+                                <small>Obras, artistas e estilos</small>
+                            </span>
+                            <span class="category-card__count">10</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="category-card" type="button" data-category="Ciências">
+                            <span class="category-card__icon" aria-hidden="true">🧪</span>
+                            <span class="category-card__content">
+                                <strong>Ciências</strong>
+                                <small>Química, biologia e física</small>
+                            </span>
+                            <span class="category-card__count">10</span>
+                        </button>
+                    </li>
+                </ul>
+            </aside>
+
+            <section class="quiz-card" aria-labelledby="question-text">
+                <div class="quiz-card__glow" aria-hidden="true"></div>
+
+                <div class="quiz-card__top">
+                    <span id="category-label" class="quiz-card__badge">Geografia</span>
+                    <p class="stats">Questão 1 de 10</p>
+                </div>
+
+                <div class="progress" aria-hidden="true">
+                    <span id="progress-bar" class="progress__bar"></span>
+                </div>
+
+                <div class="quiz-card__body">
+                    <h1 id="question-text" class="quiz-card__question">Carregando pergunta...</h1>
+                    <p id="question-helper" class="quiz-card__helper">Escolha uma alternativa para avançar.</p>
+                </div>
+
+                <div class="quiz-grid" aria-live="polite"></div>
+            </section>
+
+            <aside class="side-card ranking-card" aria-labelledby="ranking-title">
+                <div class="side-card__header side-card__header--center">
+                    <span class="side-card__eyebrow">Pontuação</span>
+                    <h2 id="ranking-title" class="side-card__title">Top Jogadores</h2>
+                    <p class="side-card__text">Salve seu nome depois do resultado.</p>
+                </div>
+
+                <ol id="leaderboard-list" class="leaderboard-list">
+                    <li>Nenhuma pontuação ainda</li>
+                </ol>
+            </aside>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__text">&copy; <span id="year"></span> QuizLab - Aplicações para Internet</p>
+        </footer>
+    </div>
+
+    <script defer src="js/main.js"></script>
+    <script defer src="js/app.js"></script>
+</body>
+</html>
