@@ -1,0 +1,27 @@
+.btn {
+    min-height: 2.8rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.1rem;
+    border-radius: var(--radius-md);
+    font-weight: 900;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn--outline {
+    background: #ffffff;
+    border: var(--border-base) solid rgba(37, 99, 235, 0.18);
+    color: var(--color-primary-800);
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.08);
+}
+
+.btn--outline:hover {
+    border-color: rgba(37, 99, 235, 0.36);
+    box-shadow: var(--shadow-hover);
+}
